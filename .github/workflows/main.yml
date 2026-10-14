@@ -1,0 +1,18 @@
+name: El meu primer workflow
+
+on:
+  push:
+
+jobs:
+  hola:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mostrar missatge
+        run: echo "Hola! La meua automatitzacio funciona."
+
+      - name: Mostrar directori
+        run: pwd
+
+      - name: Mostrar fitxers
+        run: ls -la
